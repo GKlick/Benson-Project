@@ -1,0 +1,13 @@
+setup.py
+mta_turnstile_spider/__init__.py
+mta_turnstile_spider/items.py
+mta_turnstile_spider/middlewares.py
+mta_turnstile_spider/pipelines.py
+mta_turnstile_spider/settings.py
+mta_turnstile_spider/spiders/__init__.py
+mta_turnstile_spider/spiders/mta_turnstile.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt
