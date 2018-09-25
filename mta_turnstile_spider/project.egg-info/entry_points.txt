@@ -1,0 +1,3 @@
+[scrapy]
+settings = mta_turnstile_spider.settings
+
