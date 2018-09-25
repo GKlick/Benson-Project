@@ -1,26 +1,3 @@
-import scrapy
-from mta_turnstile_spider.items import MtaTurnstileSpiderItem
-
-class MtaTurnstile(scrapy.Spider):
-    name = 'mta_turnstile'
-    allowed_domains = ['mta.info']
-    start_urls = ['http://web.mta.info/developers/turnstile.html']
-
-    def parse(self, response):
-        root_domain = 'http://web.mta.info/developers/'
-
-        for sel in response.xpath('//*[@id="contentbox"]/div/div/a'):
-            item = MtaTurnstileSpiderItem()
-            item['week_url'] = root_domain + str(sel.xpath('@href').extract()).strip("[,]")
-            request = scrapy.Request(item['week_url'], callback = self.parseTurnstileData)
-            request.meta['MtaTurnstileSpiderItem'] = item
-            yield request
-
-    def parseTurnstileData(self, response):
-        item = response.meta['MtaTurnstileSpiderItem']
-        item = self.getTurnstileInfo(item, response)
-        return item
-
-    def getTurnstileInfo(self, item, response):
-        item['turnstile_recordings'] = str(response.xpath('/html/body').extract()).split('                                        \\n')[1:]
-        return item
+version https://git-lfs.github.com/spec/v1
+oid sha256:9e79eeb2482f36d50b44b765044ec7ab5f1f3929fe94473c7da62e9664c9925c
+size 1513
