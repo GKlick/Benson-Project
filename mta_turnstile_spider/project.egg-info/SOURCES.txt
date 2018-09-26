@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:73de571d0bbb9c14fbef2456ad8046649c61ae9a81524c72c1da56c8fbaa24ca
-size 1875
+setup.py
+mta_turnstile_spider/__init__.py
+mta_turnstile_spider/items.py
+mta_turnstile_spider/middlewares.py
+mta_turnstile_spider/pipelines.py
+mta_turnstile_spider/settings.py
+mta_turnstile_spider/spiders/__init__.py
+mta_turnstile_spider/spiders/mta_turnstile.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt

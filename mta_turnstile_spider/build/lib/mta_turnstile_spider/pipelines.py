@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:09680451462c04e4ed2a35d5843d6e147c6aae5122bbbafe7f68917b63a5ab82
-size 299
+# -*- coding: utf-8 -*-
+
+# Define your item pipelines here
+#
+# Don't forget to add your pipeline to the ITEM_PIPELINES setting
+# See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
+
+
+class MtaTurnstileSpiderPipeline(object):
+    def process_item(self, item, spider):
+        return item

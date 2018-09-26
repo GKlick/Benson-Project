@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:22b5a2752058083cab9dcb15b2a03c7e80c39a6f445bdd1e1634305f26132ca4
-size 606
+# -*- coding: utf-8 -*-
+
+# Define here the models for your scraped items
+#
+# See documentation in:
+# https://doc.scrapy.org/en/latest/topics/items.html
+
+import scrapy
+
+
+class MtaTurnstileSpiderItem(scrapy.Item):
+
+    week_url = scrapy.Field()
+    turnstile_recordings = scrapy.Field()
+    # c_a = scrapy.Field()
+    # unit = scrapy.Field()
+    # scp = scrapy.Field()
+    # station = scrapy.Field()
+    # linename = scrapy.Field()
+    # division = scrapy.Field()
+    # date = scrapy.Field()
+    # time = scrapy.Field()
+    # desc = scrapy.Field()
+    # entries = scrapy.Field()
+    # exits = scrapy.Field()
