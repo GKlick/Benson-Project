@@ -1,0 +1,4 @@
+Date: Tue, 25 Sep 2018 01:57:17 GMT
+Proxy-Authenticate: Basic realm="Crawlera"
+X-Crawlera-Error: bad_proxy_auth
+X-Crawlera-Version: 1.34.0-771f59
